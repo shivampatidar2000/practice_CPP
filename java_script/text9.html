@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+     var a , revers;
+     function myfun(a,revers = 0)
+     {
+        while(a!=0)
+        {
+            revers = revers*10 + a%10;
+            a = a/10;
+        }
+      document.write("after revers the value " + revers);
+     }
+     
+     function myrevers()
+     {
+        var a = 12345;
+        var revers ;
+      document.write(" Before revers the value "+ a);
+        myfun(a,revers);
+    }
+    </script>
+</body>
+</html>
